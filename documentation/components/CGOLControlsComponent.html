@@ -1,0 +1,880 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>cgol documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">cgol documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CGOLControlsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/CGOL_controls.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-CGOL_controls</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./CGOL_controls.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./CGOL_controls.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_isRunning">_isRunning</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#intervalId">intervalId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getCurrHover">getCurrHover</a>
+                            </li>
+                            <li>
+                                <a href="#getGenerationCount">getGenerationCount</a>
+                            </li>
+                            <li>
+                                <a href="#getMaxCoords">getMaxCoords</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#reset">reset</a>
+                            </li>
+                            <li>
+                                <a href="#start">start</a>
+                            </li>
+                            <li>
+                                <a href="#stop">stop</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#isRunning">isRunning</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(cGOLService: <a href="../injectables/CGOLService.html">CGOLService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/CGOL_controls.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cGOLService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CGOLService.html" target="_self" >CGOLService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrHover"></a>
+                    <span class="name">
+                        <b>
+                            getCurrHover
+                        </b>
+                        <a href="#getCurrHover"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCurrHover()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/CGOL_controls.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGenerationCount"></a>
+                    <span class="name">
+                        <b>
+                            getGenerationCount
+                        </b>
+                        <a href="#getGenerationCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGenerationCount()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/CGOL_controls.component.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMaxCoords"></a>
+                    <span class="name">
+                        <b>
+                            getMaxCoords
+                        </b>
+                        <a href="#getMaxCoords"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMaxCoords()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/CGOL_controls.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>number[]</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/CGOL_controls.component.ts:23</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reset"></a>
+                    <span class="name">
+                        <b>
+                            reset
+                        </b>
+                        <a href="#reset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reset()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/CGOL_controls.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="start"></a>
+                    <span class="name">
+                        <b>
+                            start
+                        </b>
+                        <a href="#start"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>start()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/CGOL_controls.component.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stop"></a>
+                    <span class="name">
+                        <b>
+                            stop
+                        </b>
+                        <a href="#stop"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>stop()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/CGOL_controls.component.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_isRunning"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _isRunning</b>
+                            <a href="#_isRunning"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/CGOL_controls.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="intervalId"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            intervalId</b>
+                            <a href="#intervalId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/CGOL_controls.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isRunning"></a>
+                        <span class="name"><b>isRunning</b><a href="#isRunning"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isRunning()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/CGOL_controls.component.ts:17</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, HostListener, OnInit } from &#x27;@angular/core&#x27;;
+import { CGOLService} from &#x27;./CGOL.service&#x27;;
+
+@Component({
+  selector: &#x27;app-CGOL_controls&#x27;,
+  templateUrl: &#x27;./CGOL_controls.component.html&#x27;,
+  styleUrls: [&#x27;./CGOL_controls.component.css&#x27;]
+})
+
+export class CGOLControlsComponent implements OnInit { 
+  
+  private intervalId: number; 
+  private _isRunning: boolean;
+
+  constructor(private  cGOLService:  CGOLService) {}
+ 
+  get isRunning() {
+    return this._isRunning;
+  }
+
+
+
+  ngOnInit() {
+    this.start();
+  }
+
+  start() {
+    this.intervalId &#x3D; window.setInterval(() &#x3D;&gt; {
+      this.cGOLService.nextGeneration();
+    }, 100);
+    this._isRunning &#x3D; true;
+  }
+
+  stop() {
+    window.clearInterval(this.intervalId);
+    this._isRunning &#x3D; false;
+  }
+
+  getGenerationCount() {
+    return this.cGOLService.generationCount;
+  } 
+
+  reset() {
+    this.stop();
+    this.cGOLService.reset();
+  }
+  
+  
+  getCurrHover(){
+    return this.cGOLService.currHover;   
+  }
+
+ getMaxCoords():number[]{
+   return [this.cGOLService.Cols,this.cGOLService.Rows]
+ } 
+
+// rebuild(){
+
+// var nrow &#x3D;  document.getElementById(&quot;newrows&quot;).nodeValue;
+//  var ncols &#x3D;  document.getElementById(&quot;newcols&quot;).nodeValue;
+  
+//  if (!(nrow&#x3D;&#x3D;&quot;&quot; )&amp;&amp; !(nrow &#x3D;&#x3D; &quot; &quot;) &amp;&amp;  !(ncols &#x3D;&#x3D;&quot;&quot;) &amp;&amp; !(ncols &#x3D;&#x3D; &quot; &quot;)){
+//  this.cGOLService.setGrid(Number(nrow),Number(ncols))
+//  } 
+// }
+
+ 
+  }
+ 
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div id&#x3D;&quot;gameMenu&quot;&gt;
+  &lt;button [disabled]&#x3D;&quot;isRunning&quot; (click)&#x3D;&quot;start()&quot;&gt;Start&lt;/button&gt;
+  &lt;button [disabled]&#x3D;&quot;!isRunning&quot; (click)&#x3D;&quot;stop()&quot;&gt;Stop&lt;/button&gt;
+  &lt;button (click)&#x3D;&quot;reset()&quot;&gt;Reset&lt;/button&gt;
+&lt;!--    
+  &lt;input id&#x3D;&quot;newrows .hide&quot; placeholder&#x3D;&quot;Grid Rows&quot;   onkeydown&#x3D;&quot;return ( event.ctrlKey || event.altKey 
+                      || (47&lt;event.keyCode &amp;&amp; event.keyCode&lt;58 &amp;&amp; event.shiftKey&#x3D;&#x3D;false) 
+                      || (95&lt;event.keyCode &amp;&amp; event.keyCode&lt;106)
+                      || (event.keyCode&#x3D;&#x3D;8) || (event.keyCode&#x3D;&#x3D;9) 
+                      || (event.keyCode&gt;34 &amp;&amp; event.keyCode&lt;40) 
+                      || (event.keyCode&#x3D;&#x3D;46) )&quot;&gt;
+
+  &lt;input id &#x3D;&quot;newcols&quot; placeholder&#x3D;&quot;Grid Cols&quot;  onkeydown&#x3D;&quot;return ( event.ctrlKey || event.altKey 
+                      || (47&lt;event.keyCode &amp;&amp; event.keyCode&lt;58 &amp;&amp; event.shiftKey&#x3D;&#x3D;false) 
+                      || (95&lt;event.keyCode &amp;&amp; event.keyCode&lt;106)
+                      || (event.keyCode&#x3D;&#x3D;8) || (event.keyCode&#x3D;&#x3D;9) 
+                      || (event.keyCode&gt;34 &amp;&amp; event.keyCode&lt;40) 
+                      || (event.keyCode&#x3D;&#x3D;46) )&quot;&gt; --&gt;
+
+  &lt;p id&#x3D;&quot;gcounter&quot;&gt;Generation {{this.getGenerationCount()}}&lt;/p&gt;
+  &lt;p id&#x3D;&quot;currCoords&quot;&gt;Currrent Coordinates {{[this.getCurrHover()[0]+1,this.getCurrHover()[1]+1]}}&lt;/p&gt;
+  &lt;p id&#x3D;&quot;maxCoords&quot;&gt;Max Coordinates: {{this.getMaxCoords()}}&lt;/p&gt;
+&lt;/div&gt; 
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./CGOL_controls.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+
+*{ 
+box-sizing: border-box;
+
+
+}
+
+:host {
+    display: flex; 
+    justify-content: center;
+    padding: 5px;
+    width:100%;
+  }
+
+button{
+    border: 1px solid;    
+    background-color:lightgray;
+}
+
+
+#gameMenu &gt; *{
+  text-align: center;
+   
+  border: 1px solid;
+  font-size: 15px; 
+  padding : 0px 5px;   
+ margin: 5px 5px;}
+
+  
+p{ border-style: none!important; text-decoration: none; color:white;}
+p::after{
+  content:&quot; &quot;;
+  position: relative;
+  height:5px;
+  width: 2px;
+  margin-left: 20px;
+  border-left: 1px  solid white;
+}
+button[disabled] {
+    background-color: rgb(121, 121, 121);
+ 
+  }
+
+  input{padding : 0px; width:70px; height:auto; font-size: 10px;}
+.Sqrnum{border:none ; }
+
+
+#gameMenu{
+    align-items: center;
+    align-content:center;
+    justify-content: space-evenly;
+    display:flex; 
+    justify-items: center;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div id="gameMenu">  <button [disabled]="isRunning" (click)="start()">Start</button>  <button [disabled]="!isRunning" (click)="stop()">Stop</button>  <button (click)="reset()">Reset</button><!--      <input id="newrows .hide" placeholder="Grid Rows"   onkeydown="return ( event.ctrlKey || event.altKey                       || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false)                       || (95<event.keyCode && event.keyCode<106)                      || (event.keyCode==8) || (event.keyCode==9)                       || (event.keyCode>34 && event.keyCode<40)                       || (event.keyCode==46) )">  <input id ="newcols" placeholder="Grid Cols"  onkeydown="return ( event.ctrlKey || event.altKey                       || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false)                       || (95<event.keyCode && event.keyCode<106)                      || (event.keyCode==8) || (event.keyCode==9)                       || (event.keyCode>34 && event.keyCode<40)                       || (event.keyCode==46) )"> -->  <p id="gcounter">Generation {{this.getGenerationCount()}}</p>  <p id="currCoords">Currrent Coordinates {{[this.getCurrHover()[0]+1,this.getCurrHover()[1]+1]}}</p>  <p id="maxCoords">Max Coordinates: {{this.getMaxCoords()}}</p></div> </div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CGOLControlsComponent', 'selector': 'app-CGOL_controls'},{'name': 'CGOLGridComponent', 'selector': 'app-CGOL_grid'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CGOLControlsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CGOLControlsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+
+ 
+  .grid-row {
+    display: flex;
+    margin-bottom: 1px;
+  }
+  
+  .grid-row:last-child {
+    margin-bottom: 0;
+  }
+  
+  .grid-cell {
+    width: 10px;
+    height: 10px;
+    margin-right: 1px;
+    background-color: #5B8349;
+    border-radius: 60%;
+  } 
+
+
+  
+  .grid-cell:last-child {
+    margin-right: 0;
+  }
+  
+  .alive {
+    background: rgb(180,227,145);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(180,227,145,1) 30%, rgba(97,196,25,1) 71%);
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(180,227,145,1) 30%,rgba(97,196,25,1) 71%);
+background: radial-gradient(ellipse at center,  rgba(180,227,145,1) 30%,rgba(97,196,25,1) 71%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#61c419',GradientType=1 );
+
+    
+  }
+ 
